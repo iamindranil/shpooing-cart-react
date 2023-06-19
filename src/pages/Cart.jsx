@@ -13,7 +13,7 @@ const Cart = () => {
   return (
     <div>
       {
-        cart.length>0?(/////////////////////////
+        cart.length>0?(
           <div>
             <div>
               {
@@ -53,9 +53,13 @@ const Cart = () => {
           </div>
         ) : (
           <div>
-            <h1>Cart Empty</h1>
+            <h1 className="text-gray-700 font-semibold">Cart Empty</h1>
             <Link to='/'>
-              <button>
+              <button
+               className="text-gray-700 border-2 border-gray-700 rounded-full font-semibold
+               text-[12px] p-1 px-3 uppercase transition duration-300
+               hover:bg-gray-700
+               hover:text-white">
                 Shop Now
               </button>
             </Link>
